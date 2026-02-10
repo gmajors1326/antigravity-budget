@@ -5,12 +5,12 @@ import GravityChart from './GravityChart';
 import DataEditor from './DataEditor';
 
 const initialData = [
-    { month: 'Sep', income: 4100, mass: 3800, gravity: 300 },
-    { month: 'Oct', income: 4100, mass: 3600, gravity: 500 },
-    { month: 'Nov', income: 4150, mass: 3400, gravity: 750 },
-    { month: 'Dec', income: 4300, mass: 3000, gravity: 1300 },
-    { month: 'Jan', income: 4100, mass: 2800, gravity: 1300 },
-    { month: 'Feb', income: 4100, mass: 2400, gravity: 1700 }, // Current month
+    { month: 'Sep', income: 4100, fixed: 1400, debt: 2400, subs: 100, mass: 3900, gravity: 200 },
+    { month: 'Oct', income: 4100, fixed: 1300, debt: 2300, subs: 100, mass: 3700, gravity: 400 },
+    { month: 'Nov', income: 4150, fixed: 1250, debt: 2150, subs: 90, mass: 3490, gravity: 660 },
+    { month: 'Dec', income: 4300, fixed: 1250, debt: 1750, subs: 80, mass: 3080, gravity: 1220 },
+    { month: 'Jan', income: 4100, fixed: 1200, debt: 1600, subs: 80, mass: 2880, gravity: 1220 },
+    { month: 'Feb', income: 4100, fixed: 1200, debt: 1200, subs: 70, mass: 2470, gravity: 1630 }, // Current month
 ];
 
 const Dashboard = () => {
