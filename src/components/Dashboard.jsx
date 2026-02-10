@@ -31,21 +31,21 @@ const initialData = [
     },
     {
         month: 'Feb 26',
-        income: 3261.47, // Includes $1984.00 deposit on Feb 18
+        income: 3926.00, // Standard: $971x2 + $1984
         mass: 836.65,
-        gravity: 2424.82,
+        gravity: 3089.35,
         categories: {
             auto: 50.04, bills: 239.01, business: 10.64, entertainment: 32.38,
             food: 108.80, health: 0, home: 0, misc: 130.90,
             shopping: 29.00, travel: 30.00, uncategorized: 80.00,
-            housing: 125.88 // Calculated difference
+            housing: 125.88
         }
     },
     {
         month: 'Mar 26',
-        income: 4000.00,
+        income: 3926.00,
         mass: 2500.00,
-        gravity: 1500.00,
+        gravity: 1426.00,
         categories: {
             auto: 100, bills: 300, business: 50, entertainment: 100,
             food: 600, health: 50, home: 50, misc: 100,
