@@ -3,6 +3,7 @@ import { ArrowUpRight, TrendingDown, Zap, Trash2, CreditCard, Rocket, ShieldAler
 import MetricCard from './MetricCard';
 import GravityChart from './GravityChart';
 import DataEditor from './DataEditor';
+import MissionControl from './MissionControl';
 
 const initialData = [
     {
@@ -148,6 +149,11 @@ const Dashboard = () => {
                     {/* Left Column: Visuals */}
                     <div className="lg:col-span-2 space-y-8">
                         <GravityChart data={data} />
+
+                        {/* New Mission Control Module */}
+                        <MissionControl data={data} />
+
+                        {/* Debt Section */}
 
                         {/* Debt Section */}
                         <div className="glass-card">
