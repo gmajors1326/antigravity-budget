@@ -1,9 +1,19 @@
 import React from 'react';
 
 const MetricCard = ({ title, amount, subtext, icon: Icon, variant = 'cyan' }) => {
-    const colorClass = variant === 'cyan' ? 'text-neon-cyan' : 'text-neon-violet';
-    const shadowClass = variant === 'cyan' ? 'hover:shadow-[0_0_20px_rgba(0,243,255,0.3)]' : 'hover:shadow-[0_0_20px_rgba(157,0,255,0.3)]';
-    const bgClass = variant === 'cyan' ? 'bg-neon-cyan' : 'bg-neon-violet';
+    let colorClass = 'text-neon-cyan';
+    let shadowClass = 'hover:shadow-[0_0_20px_rgba(0,243,255,0.3)]';
+    let bgClass = 'bg-neon-cyan';
+
+    if (variant === 'violet') {
+        colorClass = 'text-neon-violet';
+        shadowClass = 'hover:shadow-[0_0_20px_rgba(157,0,255,0.3)]';
+        bgClass = 'bg-neon-violet';
+    } else if (variant === 'danger') {
+        colorClass = 'text-red-500';
+        shadowClass = 'hover:shadow-[0_0_20px_rgba(239,68,68,0.3)]';
+        bgClass = 'bg-red-500';
+    }
 
     return (
         <div className={`glass-card relative overflow-hidden group ${shadowClass} border border-white/5`}>

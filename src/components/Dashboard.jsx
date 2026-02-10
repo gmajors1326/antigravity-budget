@@ -95,9 +95,9 @@ const Dashboard = () => {
                     <MetricCard
                         title="Captured Gravity"
                         amount={`$${capturedGravity.toLocaleString()}`}
-                        subtext="Savings Rate: 58%"
-                        icon={ArrowUpRight}
-                        variant="cyan"
+                        subtext={capturedGravity >= 0 ? "Savings Rate: 58%" : "CRITICAL: GRAVITY LOSS"}
+                        icon={capturedGravity >= 0 ? ArrowUpRight : TrendingDown}
+                        variant={capturedGravity >= 0 ? "cyan" : "danger"}
                     />
                 </div>
 
