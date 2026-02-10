@@ -4,6 +4,7 @@ import MetricCard from './MetricCard';
 import GravityChart from './GravityChart';
 import DataEditor from './DataEditor';
 import MissionControl from './MissionControl';
+import CategoryTrendsChart from './CategoryTrendsChart';
 
 const initialData = [
     {
@@ -152,6 +153,9 @@ const Dashboard = () => {
 
                         {/* New Mission Control Module */}
                         <MissionControl data={data} />
+
+                        {/* Category Trends */}
+                        <CategoryTrendsChart data={data} />
 
                         {/* Debt Section */}
 
