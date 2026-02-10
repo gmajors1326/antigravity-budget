@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { X, Save, Edit2 } from 'lucide-react';
 
 const CATEGORIES = [
-    'housing', 'auto', 'bills', 'business', 'entertainment',
-    'food', 'health', 'home', 'misc', 'shopping', 'travel', 'uncategorized'
+    'housing', 'auto', 'bills', 'business', 'cash', 'children', 'entertainment',
+    'food', 'health', 'home', 'insurance', 'misc', 'personal', 'pets', 'shopping', 'taxes', 'travel', 'uncategorized'
 ];
 
 const DataEditor = ({ isOpen, onClose, data, onUpdate }) => {
