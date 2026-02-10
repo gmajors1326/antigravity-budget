@@ -5,12 +5,54 @@ import GravityChart from './GravityChart';
 import DataEditor from './DataEditor';
 
 const initialData = [
-    { month: 'Sep', income: 4100, fixed: 1400, debt: 2400, subs: 100, mass: 3900, gravity: 200 },
-    { month: 'Oct', income: 4100, fixed: 1300, debt: 2300, subs: 100, mass: 3700, gravity: 400 },
-    { month: 'Nov', income: 4150, fixed: 1250, debt: 2150, subs: 90, mass: 3490, gravity: 660 },
-    { month: 'Dec', income: 4300, fixed: 1250, debt: 1750, subs: 80, mass: 3080, gravity: 1220 },
-    { month: 'Jan', income: 4100, fixed: 1200, debt: 1600, subs: 80, mass: 2880, gravity: 1220 },
-    { month: 'Feb', income: 4100, fixed: 1200, debt: 1200, subs: 70, mass: 2470, gravity: 1630 }, // Current month
+    {
+        month: 'Dec 25',
+        income: 4193.67,
+        mass: 4084.17,
+        gravity: 109.50,
+        categories: {
+            auto: 98.97, bills: 321.04, business: 42.56, entertainment: 149.80,
+            food: 1004.51, health: 162.05, home: 16.23, misc: 207.98,
+            shopping: 275.92, travel: 53.07, uncategorized: 302.39,
+            housing: 1449.65 // Calculated difference for Rent/Mortgage/Debt
+        }
+    },
+    {
+        month: 'Jan 26',
+        income: 2604.96,
+        mass: 2753.97,
+        gravity: -149.01,
+        categories: {
+            auto: 55.49, bills: 168.85, business: 74.52, entertainment: 68.08,
+            food: 421.12, health: 39.52, home: 0, misc: 162.01,
+            shopping: 49.78, travel: 81.03, uncategorized: 262.55,
+            housing: 1371.02 // Calculated difference
+        }
+    },
+    {
+        month: 'Feb 26',
+        income: 1277.47,
+        mass: 836.65,
+        gravity: 440.82,
+        categories: {
+            auto: 50.04, bills: 239.01, business: 10.64, entertainment: 32.38,
+            food: 108.80, health: 0, home: 0, misc: 130.90,
+            shopping: 29.00, travel: 30.00, uncategorized: 80.00,
+            housing: 125.88 // Calculated difference
+        }
+    },
+    {
+        month: 'Mar 26',
+        income: 4000.00,
+        mass: 2500.00,
+        gravity: 1500.00,
+        categories: {
+            auto: 100, bills: 300, business: 50, entertainment: 100,
+            food: 600, health: 50, home: 50, misc: 100,
+            shopping: 100, travel: 0, uncategorized: 100,
+            housing: 1000
+        }
+    }, // Future Projection
 ];
 
 const Dashboard = () => {
