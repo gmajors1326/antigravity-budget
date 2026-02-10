@@ -53,8 +53,8 @@ const Dashboard = () => {
                 {/* Header */}
                 <header className="flex justify-between items-end border-b border-white/10 pb-6">
                     <div>
-                        <h1 className="text-4xl md:text-5xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
-                            ANTIGRAVITY
+                        <h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
+                            GREG & CANDICE BUDGET 2026
                         </h1>
                         <p className="text-neon-cyan text-xs md:text-sm tracking-[0.2em] uppercase mt-2 font-medium">
                             Defy the Pull of Debt
