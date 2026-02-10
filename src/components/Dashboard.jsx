@@ -5,6 +5,7 @@ import GravityChart from './GravityChart';
 import DataEditor from './DataEditor';
 import MissionControl from './MissionControl';
 import CategoryTrendsChart from './CategoryTrendsChart';
+import SavingsGoals from './SavingsGoals';
 
 const initialData = [
     {
@@ -202,6 +203,9 @@ const Dashboard = () => {
 
                     {/* Right Column: Actions */}
                     <div className="space-y-8">
+                        {/* Savings Goals */}
+                        <SavingsGoals currentGravity={capturedGravity} />
+
                         {/* Subscription Bloat */}
                         <div className="glass-card h-full relative overflow-hidden flex flex-col">
                             <div className="absolute top-0 right-0 p-32 bg-neon-violet/5 blur-[80px] rounded-full pointer-events-none"></div>
